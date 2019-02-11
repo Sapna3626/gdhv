@@ -11,6 +11,9 @@
 
 
             }
+            function mouseRollOver(MyImage) { MyImage.src = "images/p1.jpg";}
+        
+            function mouseOut(MyImage) { MyImage.src = "images/p5.jpg"; }
         }
 
     </script>
@@ -25,7 +28,7 @@
 </head>
 <body onload="trigger();">
     <p id="hover">Welcome!!!</p>
-  <img src="images/p1.jpg" id="images" />"
+  <img src="images/p1.jpg" width="500" onMouseOver="mouseRollOver(this)"  onmouseout="mouseOut(this)" />
     
 </body>
 </html>
