@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>title!!!!!</title>
+    <script type="text/javascript">
+        function trigger() {
+            document.getElementById("hover").addEventListener("mouseover", popup);
+            document.getElementById("images").addEventListener("mouseover", popup);
+            function popup() {
+                alert("welcome to my webpage!!!");
+
+
+            }
+        }
+
+    </script>
+    <style>
+        p{
+            font-size:50px;
+            position:fixed;
+            left:550px;
+            top:300px;
+        }
+    </style>
+</head>
+<body onload="trigger();">
+    <p id="hover">Welcome!!!</p>
+  <img src="images/p1.jpg" id="images" />"
+    
+</body>
+</html>
